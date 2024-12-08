@@ -1,0 +1,331 @@
+body {
+    background-color: #eae0d5;
+}
+a {
+    color: #5e503f;
+    text-decoration: none;
+}
+
+#home-a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5e503f;
+    transition: width 0.3s;
+}
+
+#home-a:hover::after {
+    width: 100%;
+}
+
+/* Register/Login Page */
+.container {
+    background-color: #c6ac8f;
+    color: 22333b;
+    display: grid;
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container-top h1 {
+    margin: 20px 0px -10px 0px;
+    text-align: center;
+    color: #5e503f;
+}
+
+.flash-messages {
+    text-align: center;
+    height: 30px;
+    color: rgb(166, 2, 2);
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.container label {
+    color: #5e503f;
+    font-size: larger;
+}
+
+.container input {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #e0e1dd;
+    border: transparent;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+
+input.register-login-btn {
+    margin-top: 15px;
+    border: 1px solid #5e503f;
+    background-color: transparent;
+}
+
+.register-login-btn:hover {
+    border: transparent;
+    background-color: #5e503f;
+    color: #c6ac8f; 
+    cursor: pointer;
+}
+
+.container p {
+    color: #5e503f;
+    text-align: center;
+}
+
+/* Home Page */
+#top-navigation-bar {
+    height: 4vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c6ac8f;
+    color: #5e503f;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+#page-name {
+    margin-left: 20px;
+}
+
+#login-username {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #eae0d5;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #5e503f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #5e503f;
+    color: #c6ac8f;
+}
+
+#login-username:hover .dropdown-content {
+    display: block;
+}
+
+#data {
+    display: grid;
+    justify-content: center;
+}
+
+#expenses-form {
+    display: flex;
+    align-items: center;
+}
+
+#day-tracker {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5e503f;
+}
+
+#add-expenses-form {
+    margin-top: 15px;
+}
+
+#data input {
+    height: 35px;
+    width: 200px;
+    font-size: 17px;
+    background-color: white;
+    border: transparent;
+    margin-top: 1px;
+}
+
+#budget-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    height: 50px;
+}
+
+#set-budget-form {
+    margin-top: 15px;
+}
+
+#budget-display {
+    color: #5e503f;
+    margin-right: 10px;
+}
+
+#track-expenses-form {
+    margin-top: 17px;
+}
+
+#track-btn {
+    box-sizing: border-box;
+    height: 35px;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c6ac8f;
+    background-color: #5e503f;
+    border: none;
+}
+
+#track-btn:hover {
+    background-color: #c6ac8f;
+    color: #5e503f;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    color: #5e503f;
+    border: 1px solid #5e503f;
+    background-color: transparent;
+}
+
+.btn:hover {
+    border: transparent;
+    background-color: #5e503f;
+    color: #c6ac8f; 
+    cursor: pointer;
+}
+
+#message-container {
+    position: fixed;
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    z-index: 1000;
+    transform: translateX(-50%);
+}
+
+.add-expense-message {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    min-width: 200px;
+    background-color: #caebd2;
+    color: #045517;
+    border: 1px solid #bce5c6;
+}
+
+.expense-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #faf5ef;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tracking page */
+#tracking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tracking-container h1 {
+    text-align: center;
+    color: #5e503f;
+    margin-bottom: 30px;
+}
+
+#chart-container {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Notifications Page */
+#notifications-section {
+    margin-top: 6vh; /* Adjust to be below the navigation bar */
+    padding: 20px;
+}
+
+#notification-list {
+    display: flex;
+    flex-direction: column; /* Display notifications in a vertical list */
+    gap: 15px; /* Space between notifications */
+}
+
+.notification-item {
+    border: 1px solid #ccc; /* Add border around each notification */
+    background-color: #f9f9f9; /* Light background color for notifications */
+    padding: 15px; /* Space inside the notification block */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for notifications */
+.notification-item:hover {
+    transform: scale(1.02); /* Slightly enlarge the block */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.notification-item h4 {
+    margin: 0 0 10px 0; /* Space below the title */
+    font-size: 1.2em;
+    color: #333;
+}
+
+.notification-item p {
+    margin: 0 0 8px 0; /* Space below the message */
+    font-size: 1em;
+    color: #555;
+}
+
+.notification-item small {
+    font-size: 0.9em;
+    color: #888; /* Muted color for timestamps */
+}
