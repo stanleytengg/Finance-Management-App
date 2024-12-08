@@ -1,6 +1,6 @@
 # CS1530 Final Project: Finance Tracker
 ## Setup
-1. Clone the repository: `https://github.com/stanleytengg/CS1530-Final-Project.git`
+1. Clone the repository: `https://github.com/stanleytengg/Finance-Management-App.git`
 2. Set up a virtual environment
 ```
 python -m venv venv
